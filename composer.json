@@ -1,0 +1,17 @@
+{
+    "name": "ebdaa/platform",
+    "description": "منصة إبداع - Ebdaa Creative Platform",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php config/init_database.php"
+        ]
+    }
+}
