@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ebdaa-platform
+    runtime: php
+    buildCommand: composer install --no-dev
+    startCommand: php index.php
+    envVars:
+      - key: PHP_VERSION
+        value: 8.2
